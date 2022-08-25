@@ -26,4 +26,4 @@ Determine o valor das seguintes expressões:
  
  3 - *p/(*q) + 7;"
  
- Resolução : 
+ Resolução : https://github.com/souzala/DCA1202_programacao_avancada/tree/main/questa01
