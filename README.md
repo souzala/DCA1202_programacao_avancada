@@ -6,7 +6,7 @@ Larissa Soares de Souza
 20190072633
 
 ## Questão 01
- Resolução : https://github.com/souzala/DCA1202_programacao_avancada/tree/main/questa01
+ Resolução : (https://github.com/souzala/DCA1202_programacao_avancada/blob/main/questa01/resolucao)
  
  ## Questão 02
  
