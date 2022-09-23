@@ -1,8 +1,10 @@
 int i=3,j=5;
-int *p, *q;
-p = &i;
-q = &j;
-p == &i;
-*p - *q;
-**&p;
-3 - *p/(*q) + 7;
+int *p, *q; // ponteiros do tipo inteiro
+p = &i; // esta salvando em p o endereço da variavel i
+q = &j; // esta salvando em q o endereço da variavel j
+
+p == &i; //comparando se o conteudo de p com o endereço de i, o qual 
+// retornara verdadeiro, visto que os dois são iguais 
+*p - *q; // fara a subtraçao do conteudo de p e q -> 3-5 = -2
+**&p; // *(*(&p) ))) - (((endereco de p) conteudo do endereco de p = &i)conteudo do endereco de i) = 3
+3 - *p/(*q) + 7; // 3 - 3/5 + 7 -> 3 - 0 + 7 -> 10
