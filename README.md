@@ -9,7 +9,7 @@ Larissa Soares de Souza
  Resolução : https://github.com/souzala/DCA1202_programacao_avancada/blob/main/questa01/resolucao
  
  ## Questão 02
- Resolução : https://github.com/souzala/DCA1202_programacao_avancada/blob/main/questao02/resposta
+ Resolução : https://github.com/souzala/DCA1202_programacao_avancada/blob/main/questao02/resolucao
  
  ## Questão 03
  
