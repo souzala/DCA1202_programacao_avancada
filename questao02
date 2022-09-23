@@ -1,6 +1,0 @@
-    int i=5, *p; // &i = 4094
-    p = &i; // p = 4094
-    printf("%x %d %d %d %d", p,*p+2,**&p,3**p,**&p+4);
-    // 4094 - ffe o endereço de i em hexadecimal, 7, 5, 15, 9
-    // %x - imprime o conteúdo da variável com representação hexadecimal sem sinal
-    // %d -imprime o conteúdo da variável com representação decimal com sinal
