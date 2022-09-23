@@ -1,8 +1,10 @@
 # Repositório com as tarefas de programação avançada
 
-### Aluna : 
+### Alunos : 
+Gabriel Afonso Freitas Aires
 Larissa Soares de Souza
 ### Matrícula : 
+20180105900
 20190072633
 
 ## Questão 01
