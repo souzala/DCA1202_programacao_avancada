@@ -6,10 +6,10 @@ Larissa Soares de Souza
 20190072633
 
 ## Questão 01
- Resolução : (https://github.com/souzala/DCA1202_programacao_avancada/blob/main/questa01/resolucao)
+ Resolução : https://github.com/souzala/DCA1202_programacao_avancada/blob/main/questa01/resolucao
  
  ## Questão 02
- 
+ Resolução : https://github.com/souzala/DCA1202_programacao_avancada/blob/main/questao02/resposta
  
  ## Questão 03
  
