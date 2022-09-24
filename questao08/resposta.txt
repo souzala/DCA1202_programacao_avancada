@@ -1,0 +1,6 @@
+
+
+
+O primeiro printa os valores dos inteiros armazenados no array
+
+O segundo printa os endereços de memoria

@@ -1,0 +1,8 @@
+
+
+p = mat + 1; é LEGAL
+
+x = (*mat)++; é LEGAL
+
+
+p = mat++ e p = ++mat; SÃO ILEGAIS, o operador por causa do operator ++

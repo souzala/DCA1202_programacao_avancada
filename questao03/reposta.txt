@@ -1,0 +1,18 @@
+
+
+p = i ILEGAL
+
+q = &j LEGAL
+
+p = &*&i LEGAL
+
+i = (*&)j ILEGAL
+
+i = *&j LEGAL
+
+i = *&*&j  LEGAL
+
+q = *p  ILEGAL
+
+i = (*p)++ + *q LEGAL
+
