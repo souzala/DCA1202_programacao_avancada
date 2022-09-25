@@ -1,8 +1,5 @@
-# Repositório com as tarefas de programação avançada
+# Lista 1 - UND 1
 
 ### Alunos : 
-<p>Gabriel Afonso Freitas Aires /<p>
-<p>Larissa Soares de Souza</p>
-### Matrícula : 
-<p>20180105900</p>
-<p>20190072633</p>
+`20180105900 - Gabriel Afonso Freitas Aires
+20190072633 - Larissa Soares de Souza`
