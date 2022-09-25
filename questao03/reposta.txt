@@ -1,18 +1,18 @@
 
 
-p = i ILEGAL
+p = i			// ILEGAL - p eh um ponteiro, ou seja um tipo especial de variavel que armazena enderecos de memorias
 
-q = &j LEGAL
+q = &j		// LEGAL - ponteiro para int que recebe o endereço de memória de j
 
-p = &*&i LEGAL
+p = &*&i		// LEGAL - 
 
-i = (*&)j ILEGAL
+i = (*&)j		// ILEGAL - 
 
-i = *&j LEGAL
+i = *&j 		// LEGAL - 
 
-i = *&*&j  LEGAL
+i = *&*&j  		// LEGAL - 
 
-q = *p  ILEGAL
+q = *p  		// ILEGAL - 
 
-i = (*p)++ + *q LEGAL
+i = (*p)++ + *q 	// LEGAL - 
 
