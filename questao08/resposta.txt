@@ -1,6 +1,18 @@
+// programa 1
+int main(){
+  int vet[] = {4,9,13};
+  int i; 
+  for(i = 0; i < 3; i++){
+  printf("%d ",*(vet+i)); // a cada iteracao imprime os valores interios armazenados no array vet na posicao i - 4, 9, 13
+  }
+}
 
+// programa 2
+int main(){
+  int vet[] = {4,9,13};
+  int i;
+  for(i = 0; i < 3; i++){
+  printf("%X ",vet+i); // a cada iteracao imprime os enderecos de memoria em hexadecimal na posicao i do array 
+  }
+}
 
-
-O primeiro printa os valores dos inteiros armazenados no array
-
-O segundo printa os endereços de memoria
