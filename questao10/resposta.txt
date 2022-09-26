@@ -1,0 +1,47 @@
+
+
+programa :
+
+
+#include <stdio.h>
+
+int main(){
+    char char_[4] = {'a','b','c','d'};
+    int int_[4] = {1, 2, 3, 4};
+    float float_[4] = {1.1, 2.1, 3.1, 4.1};
+    double double_[4] = {1.1, 2.1, 3.1, 4.1};
+
+    for(int i = 0; i < 4; i++)
+    {
+        printf("char : %x \nint : %x\nfloat: %x\ndouble: %x\n\n\n", (char_ + i), (int_ + i), (float_ + i), (double_ + i));
+    }
+
+    return 0;
+}
+
+
+
+console :
+
+char : 61ff18
+int : 61ff08
+float: 61fef8
+double: 61fed8
+
+char : 61ff19
+int : 61ff0c
+float: 61fefc
+double: 61fee0
+
+char : 61ff1a
+int : 61ff10
+float: 61ff00
+double: 61fee8
+
+char : 61ff1b
+int : 61ff14
+float: 61ff04
+double: 61fef0
+
+
+A diferença é a quantidade de bytes do int, o imaginado seriam 2 bytes e no programa foram 4 bytes
