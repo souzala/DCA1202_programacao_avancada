@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+
+
+int sort(const void *num, const void *num_) {
+    return ( *(float*)num - *(float*) num_);
+}
+
+
+void seed(float *vetor, int n){
+    for(int i = 0; i < n; i++){
+        vetor[i] = rand()%10;
+    }
+}
+
+void print(float *vetor, int n){
+    for(int i = 0; i < n; i++){
+        printf(" %.2f ", vetor[i]);
+    }
+    printf("\n");
+}
+
+int main(){
+    int n = 10;
+    float *vetor;
+
+    vetor = malloc(n * sizeof(float));
+
+    seed(vetor, n);
+    printf("Este eh o vetor nao ordenado : \n");
+    print(vetor, n);
+    printf("\n");
+    qsort(vetor, n, sizeof (float), sort);
+    printf("Este eh o vetor ordenado : \n");
+    print(vetor, n);
+
+
+
+    free(vetor);
+    return 0;
+}

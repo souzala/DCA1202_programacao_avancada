@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int sum (int x, int y){
+	return x + y;
+}
+
+int main(void){
+	
+	int x, y;
+	int (*p)(int, int); //ponteiro para função
+	
+	printf("Digite um numero: ");
+	scanf("%d", &x);
+	printf("Digite um numero: ");
+	scanf("%d", &y);
+	
+	p = sum;
+	
+	printf("%d", p(x, y));
+	
+}

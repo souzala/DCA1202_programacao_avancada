@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+
+
+float equate(float a, float b) {
+    return (a - b);
+}
+
+
+void jpsort(float *vetor, int num, float (*funcao)(float, float)){
+    int aux;
+
+    for(int i = 0; i < num; i++){
+        for(int j = 0; j < num - 1; j++){
+            if(funcao(vetor[j], vetor[j+1])>0){
+                aux = vetor[j];
+                vetor[j] = vetor[j+1];
+                vetor[j+1] = aux;
+            }
+        }
+    }
+}
+
+void seed(float *vetor, int n){
+    for(int i = 0; i < n; i++){
+        vetor[i] = rand()%10;
+    }
+}
+
+void print(float *vetor, int n){
+    for(int i = 0; i < n; i++){
+        printf(" %.2f ", vetor[i]);
+    }
+    printf("\n");
+}
+
+int main(){
+    int n = 10;
+    float *vetor;
+
+    vetor = malloc(n * sizeof(float));
+
+    seed(vetor, n);
+    printf("Este eh o vetor nao ordenado : \n");
+    print(vetor, n);
+    printf("\n");
+    jpsort(vetor, n, equate);
+    printf("Este eh o vetor ordenado : \n");
+    print(vetor, n);
+
+
+
+    free(vetor);
+    return 0;
+}

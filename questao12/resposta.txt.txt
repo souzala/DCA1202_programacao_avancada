@@ -1,0 +1,2 @@
+Ponteiros para funçõe servem para definir,qual será a função que será executada,em tempo de execução,
+não precisando inserir o nome da função naquele momento.
