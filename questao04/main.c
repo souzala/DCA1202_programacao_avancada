@@ -45,38 +45,38 @@ int main() {
   printf("%c \n", *p3); // e
 
   /* (g) */
-  p3--; //
+  p3--; // p3 = p3(e) menos um decremento que aponta para t
   printf("%c \n", *p3); // t
 
   /* (h) */
   vetor[0] = 31;
   vetor[1] = 45;
   vetor[2] = 27;
-  p4 = vetor;
-  idade = *p4;
-  printf("%d \n", idade);
+  p4 = vetor; // p4 ponteiro pra inteiro que guarda o primeiro elemento de vetor = 31
+  idade = *p4; // idade recebe o conteudo de p4 = 31
+  printf("%d \n", idade); // 31
 
   /* (i) */
-  p5 = p4 + 1;
-  idade = *p5;
-  printf("%d \n", idade);
+  p5 = p4 + 1; // p5 recebe p4(31) mais um incremento que aponta para 45 que eh o proximo valor do vetor
+  idade = *p5; // idade recebe o conteudo de p5 = 45
+  printf("%d \n", idade); // 45
 
   /* (j) */
-  p4 = p5 + 1;
-  idade = *p4;
-  printf("%d \n", idade);
+  p4 = p5 + 1; // p4 recebe p5(45) mais um incremento que aponta para 27 que eh o proximo valor do vetor
+  idade = *p4; // idade recebe o conteudo de p4 = 27
+  printf("%d \n", idade); // 27
 
   /* (l) */
-  p4 = p4 - 2;
-  idade = *p4;
-  printf("%d \n", idade);
+  p4 = p4 - 2; // p4 recebe p4(27) menos dois decrementos voltando p a pposicao inicial com o valor 31
+  idade = *p4; // idade recebe o conteudo de p4 = 27
+  printf("%d \n", idade); // 31
 
   /* (m) */
-  p5 = &vetor[2] - 1;
-  printf("%d \n", *p5);
+  p5 = &vetor[2] - 1; // p5 recebe o vetor[27] menos um decremento que aponta para 45
+  printf("%d \n", *p5); // 45
 
   /* (n) */
-  p5++;
-  printf("%d \n", *p5);
+  p5++; // p5 recebe p5(45) mais um inremento que aponta para 27
+  printf("%d \n", *p5); // 27
   return(0);
 }
