@@ -1,0 +1,11 @@
+float aloha[10], coisas[10][5], *pf, value = 2.2;
+    int i=3;
+
+    aloha[2] = value; // VALIDO - a posicao 3 do array aloha recebe o valor 2.2 de value
+    scanf("%f", &aloha); // INVALIDO -  pede ao usuario digitar um valor para 
+    aloha = value"; // INVALIDO - as aspas duplas nao tem funcionalidade e esta perdida nesse caso 
+    printf("%f", aloha); // INVALIDO - aloha nao eh um double p se utilizar %f
+    coisas[4][4] = aloha[3]; // VALIDO - a matriz coisas, na posicao indicada recebe o aloha[3]
+    coisas[5] = aloha; // INVALIDO - coisas eh uma matriz mas nesse caso ta soh como linha e deveria ter a coluna e linha 
+    pf = value; // INVALIDO - pf eh um ponteiro q deve receber um endereco de memoria 
+    pf = aloha; // VALIDO - pf esta recebendo o endereco de memoria do array aloha
