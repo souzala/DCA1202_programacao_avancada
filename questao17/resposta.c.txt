@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+struct Vetor {
+char nome[50];
+int tamanho;
+int* vet;
+
+};
+
+void monta_vetor(struct Vetor* vetor1, struct Vetor* vetor2,struct  Vetor* vetor3){
+    int n;
+
+    printf("digite o numero de elementos que os vetores irao conter: ");
+    scanf("%d", &n);
+
+    vetor1->tamanho = n;
+    vetor2->tamanho = n;
+    vetor3->tamanho = n;
+
+    printf("Qual sera o nome do vetor 1:\n");
+
+    scanf("%s",vetor1->nome);
+
+    printf("Qual sera o nome do vetor 2:\n");
+
+    scanf("%s",vetor2->nome);
+
+    printf("Qual sera o nome do vetor 3:\n");
+
+    scanf("%s",vetor3->nome);
+
+    printf("\n\n");
+
+
+
+
+}
+void sum(struct Vetor* vetor1, struct Vetor* vetor2,struct  Vetor* vetor3) {
+
+    for (int i = 0; i < (*vetor1).tamanho; i++) {
+
+        vetor3->vet[i] = vetor2->vet[i] + vetor1->vet[i];
+
+    }
+}
+
+int main() {
+
+    struct Vetor vetor1,vetor2,vetor3;
+
+    monta_vetor(&vetor1,&vetor2,&vetor3);
+
+    sum(&vetor1,&vetor2,&vetor3);
+
+
+    printf("Os vetores: %s e %s \n\n",vetor1.nome,vetor2.nome);
+    printf("somados resultam no vetor %s:",vetor3.nome);
+    printf("e tem valor:\n\n");
+
+
+    for (int i = 0; i < vetor1.tamanho; i++) {
+       if (i == vetor1.tamanho - 1) {
+            printf("%d]", vetor3.vet[i]);
+        } else {
+            printf("%d, ", vetor3.vet[i]);
+        }
+    }
+
+   free(vetor1.vet);
+   free(vetor2.vet);
+   free(vetor3.vet);
+
+    return 0;
+}
